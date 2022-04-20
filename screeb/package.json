@@ -5,11 +5,12 @@
   "main": "../release/bundle.js",
   "scripts": {
     "clean": "@TODO",
-    "compile": "npx tsc",
-    "migrate": "node ./bin/migrate.js", 
-    "webpack": "npx webpack --config webpack.config.js --mode production",
-    "webpackDev": "npx webpack --config webpack.config.js --mode development && npm run migrate",
     "test": "@TODO",
+    "compile": "npx tsc",
+    "migrate": "node ./bin/migrate.js",
+    "webpack": "npx webpack --config webpack.config.js --mode production",
+    "webpackDev": "npx webpack --config webpack.config.js --mode development",
+    "webpackDev&Migrate": "npm run webpackDev && node ./bin/migrate.js",
     "watch": "tsc-watch --onSuccess \"npm run webpackDev\" --onFailure \"node ./bin/gameover.js\""
   },
   "keywords": [],

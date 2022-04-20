@@ -5,7 +5,7 @@
 //  ▀▀▀▀ ·▀▀▀ .▀  ▀ ▀▀▀  ▀▀▀ ·▀▀▀▀
 
 export function loop() {
-  console.log("test");
+  console.log(`${Game.time}`);
 }
 
 loop();
